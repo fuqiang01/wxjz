@@ -1,0 +1,13 @@
+<view class="wrapper">
+    <view class="item" bindtap="onTap" data-id="1">
+        <image src="/img/bg1.jpg" mode="widthFix" />
+        <text>科目一</text>
+    </view>
+    <view class="item"  bindtap="onTap" data-id="4">
+        <image src="/img/bg2.jpg" mode="widthFix" />
+        <text>科目四</text>
+    </view>
+</view>
+<view class="feedback" bindtap='feedbackTop'>
+    <image mode="widthFix" src="/img/feedback.png" />
+</view>

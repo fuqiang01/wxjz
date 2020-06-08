@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="list">
+        <view class="item" data-practice="chapterType" data-type="1" bindtap="goAQPage">
+            <view class="left">
+                <text class="num">1</text>
+                <text class="title">道路交通安全法律、法规和规章</text>
+            </view>
+            <view class="right">
+                <text class="sum">{{ numObj.chapterOne }}</text>
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+        <view class="item" data-practice="chapterType" data-type="2" bindtap="goAQPage">
+            <view class="left">
+                <text class="num">2</text>
+                <text class="title">交通标志</text>
+            </view>
+            <view class="right">
+                <text class="sum">{{ numObj.chapterTwo }}</text>
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+        <view class="item" data-practice="chapterType" data-type="3" bindtap="goAQPage">
+            <view class="left">
+                <text class="num">3</text>
+                <text class="title">安全行车、文明驾驶</text>
+            </view>
+            <view class="right">
+                <text class="sum">{{ numObj.chapterThere }}</text>
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+        <view class="item" data-practice="chapterType" data-type="4" bindtap="goAQPage">
+            <view class="left">
+                <text class="num">4</text>
+                <text class="title">交通事故救护及常见危化品处置</text>
+            </view>
+            <view class="right">
+                <text class="sum">{{ numObj.chapterFour }}</text>
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+    </view>
+</view>

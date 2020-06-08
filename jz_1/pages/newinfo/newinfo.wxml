@@ -1,0 +1,30 @@
+<view class="info">
+    <swiper 
+        class="swiper"
+        current="{{ current }}"
+        bindanimationfinish="onFinish"
+        bindchange="onChange">
+            <block 
+                wx:for="{{ topicArr }}"
+                wx:key="{{ item.id }}"
+                wx:if="{{ index <= showIndex + 5 }}">
+                <swiper-item class="swiper-item">
+                    <scroll-view
+                        class="scroll-view"
+                        scroll-y="true"
+                        wx:if="{{ index >= showIndex - 5 }}">
+                        <f-info-item 
+                            bindcorrect="correct" 
+                            bindwrong="wrong" 
+                            topicObj="{{ item }}"
+                            didArr="{{ didArr }}"></f-info-item>
+                    </scroll-view>
+                </swiper-item>
+            </block>
+        </swiper>
+        <f-num-box 
+            sumObj="{{ sumObj }}" 
+            showTimer="{{ type === 'test' }}"
+            timerStart="{{ timerStart }}"
+            bindonover="onOver"/>
+</view>

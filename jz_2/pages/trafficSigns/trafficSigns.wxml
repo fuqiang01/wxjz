@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="item" wx:for="{{signsTypeList}}" wx:key="index" data-signs="{{ item.type }}" bindtap="goTSLPage">
+        <view class="title-wrap">
+            <text class="title">{{ item.type }}</text>
+            <view class="right">
+                <text>{{ item.count }}张图片</text>
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+        <view class="img-wrap">
+            <view class="img" wx:for="{{item.imgUrls }}" wx:key="index">
+                <f-img mode="widthFix" src="{{'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/mark/' + item }}" />
+            </view>
+        </view>
+    </view>
+</view>

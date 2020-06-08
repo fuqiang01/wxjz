@@ -1,0 +1,34 @@
+<view class="item">
+    <view class="user-info-wrap">
+        <image mode="widthFix" src="{{ msgInfo.user.photoUrl || 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/photo_2.jpg' }}" />
+        <view class="text">
+            <text class="name">{{ msgInfo.user.name || "匿名用户" }}</text>
+            <text class="date">{{ msgInfo.createTime }}</text>
+        </view>
+    </view>
+    <text class="msg-text">{{ msgInfo.content }}</text>
+    <view class="img-wrap {{ imgWrapClass }}">
+        <image wx:for="{{msgInfo.imgUrls}}" wx:key="index" mode="aspectFill" src="{{ item }}" bind:tap="previewImage" data-src="{{ item }}" />
+    </view>
+    <view class="reply-delete" wx:if="{{isSuper}}">
+        <view class="reply"  bindtap="clickReply">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/reply.png" />
+            <text>回复</text>
+        </view>
+        <view class="delete" bindtap="deleteMsg">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/delete.png" />
+            <text>删除</text>
+        </view>
+        <view class="read" wx:if="{{msgInfo.notRead && !isRead}}" bindtap="markRead">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/read.png" />
+            <text>标记为已读</text>
+        </view>
+        <view class="read" wx:else>
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/read.png" />
+            <text>该消息已读</text>
+        </view>
+    </view>
+    <view class="reply-msg" wx:if="{{msgInfo.reply !== ''}}">
+        <text>作者回复： {{ msgInfo.reply }}</text>
+    </view>
+</view>

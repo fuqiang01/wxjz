@@ -1,0 +1,140 @@
+page{
+    background-color: #f5f5f5;
+}
+.container{
+    padding-bottom: 20rpx;
+}
+/* 选择科目 */
+.options-subjects{
+    padding: 0 30rpx;
+    background-color: #fff;
+    margin-bottom: 30rpx;
+    border-radius: 0 0 10rpx 10rpx;
+}
+.options-subjects .subject-item:first-of-type{
+    border-bottom: 1px solid #e0e0e0;
+}
+.subject-item{
+    padding-bottom: 30rpx;
+}
+.subject-item .title-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx 0;
+}
+.subject-item .title{
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.subject-item .subjects-type text{
+    color: #aaa;
+    vertical-align: middle;
+    font-size: 26rpx;
+}
+.subject-item .subjects-type image{
+    width: 32rpx;
+    vertical-align: middle;
+}
+.subject-item .item-list{
+    display: flex;
+    justify-content: space-between;
+}
+.subject-item .item-list > view{
+    width: 160rpx;
+    height: 160rpx;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #333;
+}
+.subject-item .item-list .img{
+    width: 80rpx;
+    height: 80rpx;
+    background-size: 100% 100%;
+}
+.subject-item .item-list text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+}
+.order .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_2.png);
+}
+.test .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_3.png);
+}
+.wrong .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_8.png);
+}
+.collect .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_6.png);
+}
+/* 交通标志 */
+.mark{
+    background-color: #fff;
+    padding: 30rpx 30rpx 0;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+}
+.mark .title{
+    display: block;
+    font-size: 36rpx;
+    margin-bottom: 30rpx;
+    font-weight: bold;
+}
+.mark-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mark-list >view{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40rpx;
+    color: #333;
+}
+.mark-list .img{
+    width: 80rpx;
+    height: 80rpx;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 10rpx;
+}
+.mark-list text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+}
+.dashboard, .responsibility{
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+
+}
+.traffic .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_12.png);
+}
+.dashboard .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_14.png);
+}
+.gesture .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_17.png);
+}
+.function-btn .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_15.png);
+}
+.responsibility .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_19.png);
+}
+.color-blindness .img{
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_18.png);
+}
+/* 广告 */
+.advertising-box{
+    border-radius: 10rpx;
+    overflow: hidden;
+}

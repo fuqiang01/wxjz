@@ -1,0 +1,32 @@
+<view class="container">
+    <f-resultBox result='{{ highestNum }}' text='历史最高分'>
+        <view class="topic-num-list">
+            <view class="item">
+                <text class="num">{{ topicNumObj.notMakeNum }}</text>
+                <text class="text">未做题</text>
+            </view>
+            <view class="item">
+                <text class="num flag">{{ topicNumObj.wrongNum }}</text>
+                <text class="text">答错题</text>
+            </view>
+            <view class="item">
+                <text class="num">{{ topicNumObj.yesNum }}</text>
+                <text class="text">答对题</text>
+            </view>
+        </view>
+    </f-resultBox>
+    <view class="performance">
+        <view class="title">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/clock.png" />
+            <text>历史成绩</text>
+        </view>
+        <view class="performance-list">
+            <view class="item {{ item.score >= 90 ? 'qualified' : 'unqualified' }}" wx:for="{{ performanceList }}" wx:key="id">
+                <text class="score">{{ item.score }}分</text>
+                <text class="time-consuming">{{ item.timeConsuming }}</text>
+                <text class="date">{{ item.createTime }}</text>
+                <text class="tag">{{ item.tag }}</text>
+            </view>
+        </view>
+    </view>
+</view>

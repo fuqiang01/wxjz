@@ -1,0 +1,32 @@
+<view class="info-item">
+    <view class="title">
+        <text class="title-type">{{ topicObj.titleType }}</text>
+        <text class="title-text">{{ topicObj.titleText }}</text>
+    </view>
+    <view class="img-wrap" wx:if="{{ topicObj.imgSrc }}">
+        <image src="{{ 'https://www.fqiang.co/getImg?src=' + topicObj.imgSrc }}" mode="widthFix"/>
+    </view>
+    <view class="options">
+        <view 
+            class="options-item {{ classList[index] }}"
+            wx:for="{{ topicObj.options }}"
+            wx:key="index"
+            bindtap="optionTap"
+            data-index="{{ index }}">
+            <text class="t1">{{ optionT[index] }}</text>
+            <text class="t2">{{ item }}</text>
+        </view>
+    </view>
+    <view class="btn-wrap" wx:if="{{ topicObj.titleType == '多选题' }}">
+        <text class="btn" bindtap="submitBtnTap">确认提交</text>
+    </view>
+    <view class="explain" wx:if="{{ showExplain || isDid }}"> 
+        <text class="explain-title">题目分析</text>
+        <view class="answer">
+            <text >本题答案: </text>
+            <text wx:for="{{ topicObj.answer }}" wx:key="item">{{ optionT[item] }}</text>
+        </view>
+        <text class="explain-info">{{ topicObj.explain }}</text>
+    </view>
+</view>
+

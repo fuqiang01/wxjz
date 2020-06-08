@@ -1,0 +1,40 @@
+/* 兼容微信版本7.0.0以前的版本不兼容新的button样式，导致页面样式崩了的问题 */
+button {
+    padding: 8px 24px;
+    line-height: 1.41176471;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 17px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 18px;
+    color: #000;
+    background-color: #f8f8f8;    
+    border: none;
+}
+button::after{
+    border: none;
+}
+button::before{
+    border: none;
+}
+button[type='primary'] {
+    color: #fff;
+    background-color: #07c160; 
+}
+button:not([size='mini']) {
+    width: 184px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+    

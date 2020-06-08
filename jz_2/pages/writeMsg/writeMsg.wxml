@@ -1,0 +1,20 @@
+<view class="wrap">
+    <textarea 
+        bindinput="onInput"
+        maxlength="{{ -1 }}"
+        show-confirm-bar="{{ false }}"
+        placeholder="输入您想反馈或需要帮助的内容..."
+        placeholder-style="color:#aaa"/>
+    <view class="img-wrap">
+        <view class="img" wx:for="{{imgUrls}}" wx:key="index">
+            <image mode="aspectFill" src="{{ item }}"/>
+        </view>
+        <view class="upload-btn" bindtap="uploadImg" wx:if="{{imgUrls.length < 9}}">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/camera.png" />
+            <text>照片/视屏</text>
+        </view>
+    </view>
+    <button class="submitBtn" type="primary" loading="{{loading}}" bindtap="onSubmit">
+        确认提交
+    </button>
+</view>

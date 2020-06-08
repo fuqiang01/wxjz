@@ -1,0 +1,58 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/message/message",
+        "pages/home/home",
+        "pages/exerciseOptions/exerciseOptions",
+        "pages/answerQuestions/answerQuestions",
+        "pages/chapterList/chapterList",
+        "pages/specialPractice/specialPractice",
+        "pages/rankingList/rankingList",
+        "pages/historyResult/historyResult",
+        "pages/writeMsg/writeMsg",
+        "pages/about/about",
+        "pages/testMsg/testMsg",
+        "pages/trafficSignsInfoList/trafficSignsInfoList",
+        "pages/trafficSignsList/trafficSignsList",
+        "pages/trafficSigns/trafficSigns",
+        "pages/serverMaintenance/serverMaintenance",
+        "pages/testResult/testResult"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将用于位置效果的展示"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "摩托车驾照理论题",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#aaa",
+        "selectedColor": "#57E4C0",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "练习",
+                "iconPath": "/img/motorcycle.png",
+                "selectedIconPath": "/img/motorcycle_active.png"
+            },
+            {
+                "pagePath": "pages/message/message",
+                "text": "留言",
+                "iconPath": "/img/msg.png",
+                "selectedIconPath": "/img/msg_active.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我的",
+                "iconPath": "/img/home.png",
+                "selectedIconPath": "/img/home_active.png"
+            }
+        ]
+    }
+}

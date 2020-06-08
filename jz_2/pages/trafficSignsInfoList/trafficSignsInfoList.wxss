@@ -1,0 +1,34 @@
+page{
+    background-color: #f4f7ff;
+}
+.wrap{
+    min-height: 100vh;
+}
+.item{
+    box-sizing: border-box;
+    padding: 100rpx 20rpx 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30rpx;
+    box-shadow: 0 0 20rpx #eee;
+    padding: 80rpx 40rpx 0;
+    height: 900rpx;
+}
+.item .img{
+    width: 80%;
+}
+.title{
+    font-weight: bold;
+    padding: 50rpx 0 30rpx;
+}
+.explain{
+    color: #777;
+    font-size: 26rpx;
+    display: block;
+    width: 100%;
+    line-height: 44rpx;
+}

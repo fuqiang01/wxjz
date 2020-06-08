@@ -1,0 +1,54 @@
+.motorcycle-gif{
+    width: 100%;
+    height: 300rpx;
+}
+.test-order{
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 50rpx 0;
+}
+.order,.test{
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+    line-height: 200rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 36rpx;
+    border-radius: 50%;
+}
+.order{
+    background: linear-gradient(180deg, #00f8b6, #24c293);
+    box-shadow: 0 0 30rpx #00f8b6;
+}
+.test{
+    background: linear-gradient(180deg, #7ddaff, #5f8dec);
+    box-shadow: 0 0 30rpx #7ddaff;
+}
+.other-options{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30rpx 20rpx 0;
+}
+.other-options .item{
+    width: 25%;
+    text-align: center;
+    margin-bottom: 20rpx;
+}
+/* 清除btn的默认样式 */
+.other-options .item button{
+    width: 100%!important;
+    background-color: transparent!important;
+    padding: 0!important;
+
+}
+.other-options .item image{
+    width: 90rpx;
+}
+.other-options .item text{
+    display: block;
+    color: #333;
+    font-size: 28rpx;
+    font-weight: normal;
+}

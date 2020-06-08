@@ -1,0 +1,52 @@
+<view class="container">
+    <view class="type-list">
+        <view class="item">
+            <view class="title-wrap">
+                <text class="title">按内容类型</text>
+                <text class="sum">{{ numberObj.textTopicNumber + numberObj.imageTopicNumber }}题</text>
+            </view>
+            <view class="types">
+                <text data-practice="contentType" data-type="文字题" bindtap="goAQPage">文字题（{{ numberObj.textTopicNumber }}）</text>
+                <text data-practice="contentType" data-type="图片题" bindtap="goAQPage">图片题（{{ numberObj.imageTopicNumber }}）</text>
+            </view>
+        </view>
+        <view class="item">
+            <view class="title-wrap">
+                <text class="title">按答案类型</text>
+                <text class="sum">{{ numberObj.rightTopicNumber + numberObj.wrongTopicNumber }}题</text>
+            </view>
+            <view class="types">
+                <text data-practice="answerType" data-type="正确题" bindtap="goAQPage">正确题（{{ numberObj.rightTopicNumber }}）</text>
+                <text data-practice="answerType" data-type="错误题" bindtap="goAQPage">错误题（{{ numberObj.wrongTopicNumber }}）</text>
+            </view>
+        </view>
+        <view class="item">
+            <view class="title-wrap">
+                <text class="title">按试题类型</text>
+                <text class="sum">{{ numberObj.judgeTopicNumber + numberObj.radioTopicNumber + numberObj.choiceTopicNumber }}题</text>
+            </view>
+            <view class="types">
+                <text data-practice="testType" data-type="判断题" bindtap="goAQPage">判断题（{{ numberObj.judgeTopicNumber }}）</text>
+                <text data-practice="testType" data-type="单选题" bindtap="goAQPage">单选题（{{ numberObj.radioTopicNumber }}）</text>
+                <text data-practice="testType" data-type="多选题" bindtap="goAQPage">多选题（{{ numberObj.choiceTopicNumber }}）</text>
+            </view>
+        </view>
+        <view class="item">
+            <view class="title-wrap">
+                <text class="title">按知识点类型</text>
+                <text class="sum">{{ numberObj.textTopicNumber + numberObj.imageTopicNumber }}题</text>
+            </view>
+            <view class="types">
+                <text data-practice="knowledgeType" data-type="速度题" bindtap="goAQPage">速度题（{{ numberObj.speedTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="标志题" bindtap="goAQPage">标志题（{{ numberObj.markTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="灯光题" bindtap="goAQPage">灯光题（{{ numberObj.lightTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="安全常识" bindtap="goAQPage">安全常识（{{ numberObj.securityTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="特殊天气" bindtap="goAQPage">特殊天气（{{ numberObj.specialWeatherTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="意外事故" bindtap="goAQPage">意外事故（{{ numberObj.accidentTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="驾驶证" bindtap="goAQPage">驾驶证（{{ numberObj.drivingLicenceTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="扣分罚款" bindtap="goAQPage">扣分罚款（{{ numberObj.pointsTopicNumber }}）</text>
+                <text data-practice="knowledgeType" data-type="危险化学品" bindtap="goAQPage">危险化学品（{{ numberObj.dangerousTopicNumber }}）</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+.container{
+    padding: 40rpx 100rpx;
+    font-size: 26rpx;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-info .photo{
+    width: 160rpx;
+    border-radius: 50%;
+}
+.user-info .name{
+    font-size: 34rpx;
+    line-height: 60rpx;
+}
+.user-info .best-result{
+    color: #777;
+}
+.info{
+    padding: 60rpx 40rpx;
+}
+.info .item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 0;
+}
+.info .item .type{
+    color: #aaa;
+}
+.info .item .value{
+    color: #333;
+}
+.note{
+    display: block;
+    color: #999;
+    margin-bottom: 80rpx;
+    line-height: 44rpx;
+}
+.btn{
+    width: 100%!important;
+}

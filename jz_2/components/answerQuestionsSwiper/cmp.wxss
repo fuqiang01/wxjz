@@ -1,0 +1,6 @@
+.wrap{
+    height: calc(100vh);
+}
+.scroll-view{
+    height: calc(100vh - 100rpx);
+}

@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="list">
+        <view class="item" wx:for="{{ rankingList }}" wx:key="id">
+            <view class="left">
+                <text class="ranking no{{ index + 1 }}">{{ index + 1 }}</text>
+                <image class="photo" mode="widthFix" src="{{ item.user.photoUrl || 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/photo_1.jpg' }}" data-id="{{item.id}}" binderror="photoError" />
+                <view class="score-name">
+                    <text class="name">{{ item.user.name === "" ? "未登录用户" : item.user.name }}</text>
+                    <text class="score">{{ item.score }}分</text>
+                </view>
+            </view>
+            <view class="date">{{ item.timeConsuming }}</view>
+        </view>
+    </view>
+    <view class="my-rank">
+        <view class="left">
+            <text class="ranking">{{ bestResult.ranking == 0 ? "100+" : bestResult.ranking }}</text>
+            <image class="photo" mode="widthFix" src="{{ bestResult.photoUrl || 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/photo_1.jpg' }}" />
+            <view class="score-name">
+                <text class="name">{{ bestResult.userName }}</text>
+                <text class="score">{{ bestResult.score }}分</text>
+            </view>
+        </view>
+        <view class="date">{{ bestResult.timeConsuming }}</view>
+    </view>
+</view>

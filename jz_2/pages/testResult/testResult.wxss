@@ -1,0 +1,60 @@
+.tag-wrap{
+    display: flex;
+    padding: 40rpx 0 0 40rpx;
+    position: relative;
+    z-index: 3;
+}
+.tag-wrap .photo image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.tag-wrap .text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 10rpx;
+    padding-left: 30rpx;
+}
+.tag-wrap .text text{
+    font-size: 24rpx;
+    line-height: 40rpx;
+}
+.tag-wrap .text .tag{
+    font-size: 30rpx;
+    font-weight: bold;
+    line-height: 40rpx;
+}
+.func-list{
+    padding: 40rpx 20rpx;
+}
+.func-list .item{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    box-shadow: 0 0 20rpx #e0e0e0;
+    padding: 20rpx 40rpx;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    background: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png) 650rpx center no-repeat;
+}
+.func-list .item image{
+    width: 60rpx;
+    height: 60rpx;
+    padding-top: 20rpx;
+}
+.func-list .item .text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30rpx;
+}
+.func-list .item .text .text-title{
+    font-size: 30rpx;
+    line-height: 60rpx;
+}
+.func-list .item .text .text-info{
+    font-size: 24rpx;
+    line-height: 40rpx;
+    color: #999;
+}

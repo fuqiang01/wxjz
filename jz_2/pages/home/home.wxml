@@ -1,0 +1,39 @@
+<view class="container">
+    <view class="photo-wrap">
+        <view class="photo">
+            <image mode="widthFix" src="{{ photoUrl }}" />
+        </view>
+        <button wx:if="{{!hasUserInfo}}" class="login-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <text wx:else class="user-name">{{ name }}</text>
+    </view>
+    <view class="list">
+        <view class="item" bind:tap="switchTopicList">
+            <view class="left">
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/topic.png" />
+                <text>当前题库</text>
+            </view>
+            <view class="right">
+                <text>摩托车（D/E/F）理论题</text>
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+        <view class="item" bind:tap="goMPage">
+            <view class="left">
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/feedback.png" />
+                <text>帮助反馈</text>
+            </view>
+            <view class="right">
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+        <view class="item" bindtap="goAboutPage">
+            <view class="left">
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/about.png" />
+                <text>关于我们</text>
+            </view>
+            <view class="right">
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+            </view>
+        </view>
+    </view>
+</view>

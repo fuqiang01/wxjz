@@ -1,0 +1,31 @@
+<view class="info">
+    <swiper 
+        class="swiper"
+        current="{{ current }}"
+        duration="{{ isTouch ? 500 : 0 }}"
+        bindanimationfinish="onFinish"
+        bindchange="onChange"
+        bindtouchstart="onStart">
+            <block 
+                wx:for="{{ topicArr }}"
+                wx:key="{{ item.id }}"
+                wx:if="{{ index <= showIndex + 1 && index >= showIndex - 1 }}">
+                <swiper-item class="swiper-item">
+                    <scroll-view
+                        class="scroll-view"
+                        scroll-y="true">
+                        <f-info-item 
+                            bindcorrect="correct" 
+                            bindwrong="wrong" 
+                            topicObj="{{ item }}"
+                            didArr="{{ didArr }}"></f-info-item>
+                    </scroll-view>
+                </swiper-item>
+            </block>
+        </swiper>
+        <f-num-box 
+            sumObj="{{ sumObj }}" 
+            showTimer="{{ type === 'test' }}"
+            timerStart="{{ timerStart }}"
+            bindonover="onOver"/>
+</view>

@@ -1,0 +1,4 @@
+<view class="container">
+    <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/gif_3.gif" />
+    <text>非常抱歉,服务器正在升级维护,目前此小程序的功能暂时不能使用,给您造成了不便,请谅解。</text>
+</view>

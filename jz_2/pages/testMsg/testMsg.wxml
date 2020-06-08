@@ -1,0 +1,31 @@
+<view class="container">
+    <view class="user-info">
+        <image class="photo" mode="widthFix" src="{{ photoUrl ? photoUrl : 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/photo_1.jpg' }}" />
+        <text class="name">{{ name ? name : '未登录'}}</text>
+        <text class="best-result">最好成绩{{ score }}分，用时{{ timeConsuming }}</text>
+    </view>
+    <view class="info">
+        <view class="item">
+            <text class="type">考试类型</text>
+            <text class="value">摩托车D/E/F</text>
+        </view>
+        <view class="item">
+            <text class="type">考试科目</text>
+            <text class="value">科目{{ subject == 1 ? '一' : '四' }}</text>
+        </view>
+        <view class="item">
+            <text class="type">考试标准</text>
+            <text class="value">50题/30分钟</text>
+        </view>
+        <view class="item">
+            <text class="type">合格标准</text>
+            <text class="value">90分及格（满分100分）</text>
+        </view>
+        <view class="item">
+            <text class="type">出题规则</text>
+            <text class="value">根据公安部出题规则组卷</text>
+        </view>
+    </view>
+    <text class="note">模拟考试不能修改答案，每错一题扣2分，错题累计超过5道，考试不通过</text>
+    <button type="primary" class="btn" bindtap="goAQPage">开始考试</button>
+</view>

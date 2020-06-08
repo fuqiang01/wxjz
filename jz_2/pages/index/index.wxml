@@ -1,0 +1,95 @@
+<view class="container">
+    <!-- 选择科目 -->
+    <view class="options-subjects">
+        <!-- 科目一 -->
+        <view class="subject-item">
+            <view class="title-wrap" bind:tap="goEOPage" data-subject="1">
+                <text class="title">科目一</text>
+                <view class="subjects-type">
+                    <text>{{ address + topicType }}</text>
+                    <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+                </view>
+            </view>
+            <view class="item-list">
+                <view class="order" bind:tap="goAQPage" data-subject="1" data-practice="order">
+                    <view class="img"></view>
+                    <text>顺序练习</text>
+                </view>
+                <view class="test" bind:tap="goTMPage" data-subject="1" data-practice="test">
+                    <view class="img"></view>
+                    <text>模拟考试</text>
+                </view>
+                <view class="wrong" bind:tap="goAQPage" data-subject="1" data-practice="wrong">
+                    <view class="img"></view>
+                    <text>错题本</text>
+                </view>
+                <view class="collect" bind:tap="goAQPage" data-subject="1" data-practice="collect">
+                    <view class="img"></view>
+                    <text>收藏</text>
+                </view>
+            </view>
+        </view>
+        <!-- 科目四 -->
+        <view class="subject-item">
+            <view class="title-wrap" bind:tap="goEOPage" data-subject="4">
+                <text class="title">科目四</text>
+                <view class="subjects-type">
+                    <text>{{ address + topicType }}</text>
+                    <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/arrow_r.png" />
+                </view>
+            </view>
+            <view class="item-list">
+                <view class="order" bind:tap="goAQPage" data-subject="4" data-practice="order">
+                    <view class="img"></view>
+                    <text>顺序练习</text>
+                </view>
+                <view class="test" bind:tap="goTMPage" data-subject="4" data-practice="test">
+                    <view class="img"></view>
+                    <text>模拟考试</text>
+                </view>
+                <view class="wrong" bind:tap="goAQPage" data-subject="4" data-practice="wrong">
+                    <view class="img"></view>
+                    <text>错题本</text>
+                </view>
+                <view class="collect" bind:tap="goAQPage" data-subject="4" data-practice="collect">
+                    <view class="img"></view>
+                    <text>收藏</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 交通标志 -->
+    <view class="mark">
+        <text class="title">交通标志</text>
+        <view class="mark-list">
+            <view class="traffic" data-mark="交通标志" bindtap="goTSPage">
+                <view class="img"></view>
+                <text>交通标志</text>
+            </view>
+            <view class="dashboard" data-mark="仪表指示灯" bindtap="goTSLPage">
+                <view class="img"></view>
+                <text>仪表指示灯</text>
+            </view>
+            <view class="gesture" data-mark="交警手势" bindtap="goTSLPage">
+                <view class="img"></view>
+                <text>交警手势</text>
+            </view>
+            <view class="function-btn" data-mark="功能按键" bindtap="goTSLPage">
+                <view class="img"></view>
+                <text>车内功能按键</text>
+            </view>
+            <view class="responsibility" data-mark="责任认定" bindtap="goTSLPage">
+                <view class="img"></view>
+                <text>责任认定图解</text>
+            </view>
+            <view class="color-blindness" data-mark="色盲测试图" bindtap="goTSLPage">
+                <view class="img"></view>
+                <text>色盲测试图</text>
+            </view>
+        </view>
+    </view>
+    <!-- 广告 -->
+    <view class="advertising-box">
+        <ad unit-id="adunit-418a151902c4f030"></ad>
+    </view>
+</view>

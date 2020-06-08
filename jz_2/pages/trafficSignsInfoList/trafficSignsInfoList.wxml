@@ -1,0 +1,30 @@
+<view class="container">
+    <swiper 
+        class="wrap" 
+        previous-margin="50rpx" 
+        next-margin="50rpx"
+        current="{{ current }}"
+        bindanimationfinish="onFinish">
+        <swiper-item 
+            wx:for="{{dataList}}" 
+            wx:key="id"
+            class="item"
+            wx:if="{{ index >= minIndex && index < minIndex + showCount }}">
+            <!-- 这是有缩放的代码，但是会出现bug，到时候有时间自己写轮播图插件的话可以再参考一下这个思路 -->
+            <!-- <view 
+                class="content"
+                style="transform: scale({{ index === showIndex ? activeScale : (index === showIndex + 1 || index === showIndex - 1 ? nextScale : 1) }});">
+                <image mode="widthFix" src="{{ 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/topic_1/' + item.imgUrl }}" />
+                <text class="title">{{ item.name }}</text>
+                <text class="explain">{{ item.explain }}</text>
+            </view> -->
+            <view class="content">
+                <view class="img">
+                    <f-img mode="widthFix" src="{{ 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/mark/' + item.imgUrl }}" />
+                </view>
+                <text class="title">{{ item.name }}</text>
+                <text class="explain">{{ item.explain }}</text>
+            </view>
+        </swiper-item>    
+    </swiper>
+</view>

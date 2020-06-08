@@ -1,0 +1,39 @@
+<view class="container">
+    <image class="motorcycle-gif" mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/motorcycle_gif.gif" />
+    <view class="test-order">
+        <text class="order" bind:tap="goAQPage" data-practice="order">顺序练习</text>
+        <text class="test" bind:tap="goTMPage" data-practice="test">模拟考试</text>
+    </view>
+    <view class="other-options">
+        <view class="item" bind:tap="goAQPage" data-practice="random">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_5.png" />
+            <text>随机练习</text>
+        </view>
+        <view class="item" bind:tap="goCLPage">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_1.png" />
+            <text>章节练习</text>
+        </view>
+        <view class="item" bind:tap="goSPPage">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_4.png" />
+            <text>专项练习</text>
+        </view>
+        <view class="item" bind:tap="goAQPage" data-practice="wrong">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_8.png" />
+            <text>错题本</text>
+        </view>
+        <view class="item" bind:tap="goAQPage" data-practice="collect">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_6.png" />
+            <text>收藏</text>
+        </view>
+        <view class="item" bind:tap="goHRPage">
+            <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_10.png" />
+            <text>成绩分析</text>
+        </view>
+        <view class="item">
+            <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+                <image mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_9.png" />
+                <text>排行榜</text>
+            </button>
+        </view>
+    </view>
+</view>

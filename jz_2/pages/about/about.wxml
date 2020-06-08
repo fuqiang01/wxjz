@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="logo">
+        <f-img mode="widthFix" src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/f_logo.png" />
+    </view>
+    <text class="name">摩托车驾照理论题</text>
+    <text class="version">2.1.2</text>
+</view>

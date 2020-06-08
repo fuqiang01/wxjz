@@ -1,0 +1,80 @@
+.list{
+    padding: 0 20rpx 140rpx;
+}
+.list .item:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+.list .item, .my-rank{
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 0;
+}
+.left{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+.photo{
+    width: 100rpx;
+    max-height: 100rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.score-name text{
+    display: block;
+}
+.score-name .name{
+    line-height: 60rpx;
+    font-size: 36rpx;
+    max-width: 335rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.score-name .score{
+    line-height: 40rpx;
+    color: #aaa;
+}
+.ranking{
+    display: inline-block;
+    width: 60rpx;
+    height: 60rpx;
+    line-height: 70rpx;
+    background-size: 100%;
+    text-align: center;
+    margin-right: 20rpx;
+    color: #999;
+}
+.no1{
+    color: #fff;
+    font-weight: bold;
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/rank_1.png);
+}
+.no2{
+    color: #fff;
+    font-weight: bold;
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/rank_2.png);
+}
+.no3{
+    color: #fff;
+    font-weight: bold;
+    background-image: url(https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/rank_3.png);
+}
+.date{
+    flex: 0 0 auto;
+    font-size: 36rpx;
+    line-height: 100rpx;
+    color: #FE5B47;
+}
+.my-rank{
+    padding: 20rpx;
+    position: fixed;
+    bottom: 0;
+    background-color: #f5f5f5;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* 宽度不够， */
+/* .my-rank .ranking{
+    width: 70rpx;
+} */

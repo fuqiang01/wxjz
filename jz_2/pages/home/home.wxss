@@ -1,0 +1,61 @@
+page{
+    background-color: #f8f8f8;
+}
+.photo-wrap{
+    background-color: #fff;
+    margin-bottom: 16rpx;
+}
+.photo{
+    text-align: center;
+    padding: 60rpx 0 20rpx;
+}
+.photo image{
+    width: 220rpx;
+    height: 220rpx;
+    border-radius: 50%;
+}
+.login-btn, .user-name{
+    font-size: 36rpx;
+    display: block;
+    text-align: center;
+    color: #333;
+    padding-bottom: 30rpx;
+    font-weight: normal;
+    background: #fff;
+    line-height: 40rpx;
+}
+.list{
+    padding: 20rpx;
+    background-color: #fff;
+    margin: 0 16rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 0 10px #eee;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 14rpx 0;
+}
+
+.item .left image{
+    width: 48rpx;
+    max-height: 48rpx;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}
+.item .left text{
+    font-size: 34rpx;
+    color: #333;
+    vertical-align: middle;
+}
+.item .right image{
+    width: 32rpx;
+    max-height: 32rpx;
+    vertical-align: middle;
+    margin-left: 10rpx;
+}
+.item .right text{
+    color: #aaa;
+    vertical-align: middle;
+    font-size: 26rpx;
+}

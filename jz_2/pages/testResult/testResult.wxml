@@ -1,0 +1,41 @@
+<f-resultBox result='{{ result }}' text='{{ result >= 90 ? "成绩合格" : "成绩不合格" }}'>
+    <view class="tag-wrap">
+        <view class="photo">
+            <image mode="widthFix" src="{{ photoUrl || 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/photo_1.jpg' }}" />
+        </view>
+        <view class="text">
+            <text>获得称号</text>
+            <text class="tag">{{ tag }}</text>
+        </view>
+    </view>
+</f-resultBox>
+<view class="func-list">
+    <view class="item" bindtap="goTestWrongTopic">
+        <image src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_8.png" mode="widthFix" />
+        <view class="text">
+            <text class="text-title">本次错题</text>
+            <text class="text-info">练习本次错题</text>
+        </view>
+    </view>
+    <view class="item" bindtap="goHRPage">
+        <image src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_10.png" mode="widthFix" />
+        <view class="text">
+            <text class="text-title">历史成绩</text>
+            <text class="text-info">查看以往成绩分析进步与否</text>
+        </view>
+    </view>
+    <button class="item" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <image src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_9.png" mode="widthFix" />
+        <view class="text">
+            <text class="text-title">成绩排行榜</text>
+            <text class="text-info">查看自己在全国排行榜中的位置</text>
+        </view>
+    </button>
+    <view class="item" bindtap="testAgain">
+        <image src="https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/icon_28.png" mode="widthFix" />
+        <view class="text">
+            <text class="text-title">重新考试</text>
+            <text class="text-info">成绩不满意，再考一次</text>
+        </view>
+    </view>
+</view>

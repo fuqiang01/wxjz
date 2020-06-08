@@ -1,0 +1,13 @@
+<view class="container">
+    <view 
+        class="item" 
+        wx:for="{{ trafficSignsList }}" 
+        wx:key="id" 
+        data-index="{{ index }}" 
+        bindtap="goTSILPage">
+        <view class="img">
+            <f-img mode="widthFix" src="{{ 'https://fqiang-1300549778.cos.ap-chongqing.myqcloud.com/jz/mark/' + item.imgUrl }}" />
+        </view>
+        <text>{{ item.name }}</text>
+    </view>
+</view>

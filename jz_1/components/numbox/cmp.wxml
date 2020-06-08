@@ -1,0 +1,17 @@
+<view class="num-box">
+    <view class="item">
+        <image mode="widthFix" src="/img/yes.png" />
+        <text>{{ sumObj.yes }}</text>
+    </view>
+    <view class="item">
+        <image mode="widthFix" src="/img/no.png" />
+        <text>{{ sumObj.no }}</text>
+    </view>
+    <view class="item">
+        <f-timer wx:if="{{ showTimer }}" start="{{timerStart}}" bindonover="onOver"></f-timer>
+    </view>
+    <view class="item">
+        <image mode="widthFix" src="/img/all.png" />
+        <text>{{ ( sumObj.yes + sumObj.no ) }} / {{ sumObj.all }}</text>
+    </view>
+</view>

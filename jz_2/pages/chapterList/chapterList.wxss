@@ -1,0 +1,57 @@
+page{
+    background-color: #f8f8f8;
+}
+.list{
+    background-color: #fff;
+    padding: 0 20rpx;
+}
+.list .item:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+.list .item{
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx 0;
+}
+.list .item text{
+    display: inline-block;
+    line-height: 40rpx;
+}
+.list .item .left{
+    flex: 1 1 auto;
+    display: flex;
+    height: 40rpx;
+    width: 80%;
+}
+.list .item .left .num{
+    flex: 0 0 auto;
+    font-size: 28rpx;
+    background-color: #18b4ed;
+    color: #fff;
+    width: 40rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    font-weight: bold;
+    margin-right: 10rpx;
+}
+.list .item .left .title{
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list .item .right{
+    flex: 0 0 auto;
+    min-width: 50px;
+    display: flex;
+    height: 40rpx;
+    align-items: center;
+    justify-content: flex-end;
+}
+.list .item .right .sum{
+    color: #aaa;
+    font-size: 28rpx;
+}
+.list .item .right image{
+    width: 32rpx;
+}

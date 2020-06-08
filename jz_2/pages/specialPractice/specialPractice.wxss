@@ -1,0 +1,40 @@
+.type-list{
+    padding: 0 20rpx;
+    color: #333;
+}
+.type-list .item:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10rpx;
+}
+.type-list .item .title-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 40rpx 0 60rpx;
+}
+.title-wrap .title{
+    font-weight: bold;
+    font-size: 32rpx;
+}
+.title-wrap .sum{
+    color: #aaa;
+    font-size: 26rpx;
+}
+.types{
+    display: flex;
+    flex-wrap: wrap;
+}
+.types text:not(:nth-of-type(4n)){
+    margin-right: 18rpx;
+}
+.types text{
+    color: #666;
+    border: 1px solid #e5e5e5;
+    /* width: 164rpx; */
+    padding: 0 20rpx;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 18rpx;
+    line-height: 70rpx;
+    border-radius: 20rpx;
+}

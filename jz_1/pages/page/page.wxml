@@ -1,0 +1,33 @@
+<view class="page">
+    <view class="item" bindtap="onTap" data-type="order">
+        <image src="{{ imgSrc }}" mode="widthFix" />
+        <view class="text-wrap">
+            <text class="t1">顺序练习</text>
+            <text class="t2">{{ sumObj.achieve }} / {{ sumObj.allNum }}</text>
+        </view>
+    </view>
+    <view class="item" bindtap="onTap" data-type="test">
+        <image src="{{ imgSrc }}" mode="widthFix" />
+        <view class="text-wrap">
+            <text class="t1">模拟考试</text>
+        </view>
+    </view>
+    <view class="item" bindtap="onTap" data-type="wrong">
+        <image src="{{ imgSrc }}" mode="widthFix" />
+        <view class="text-wrap">
+            <text class="t1">错题回顾</text>
+            <text class="t2">{{ sumObj.wrong }}</text>
+        </view>
+    </view>
+    <view class="test-version">
+        <image src="/img/bg3.jpg" mode="widthFix" />
+        <view class="con-wrap">
+            <text>测试版本</text>
+            <view class="test-btn-wrap">
+                <view bindtap="onTap" data-testV="{{ true }}" data-type="order">顺序练习</view>
+                <view bindtap="onTap" data-testV="{{ true }}" data-type="test">模拟考试</view>
+                <view bindtap="onTap" data-testV="{{ true }}" data-type="wrong">错题回顾</view>
+            </view>
+        </view>
+    </view>
+</view>

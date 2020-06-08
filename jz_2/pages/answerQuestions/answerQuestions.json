@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "f-topicBox": "/components/topicBox/cmp",
+    "f-numBox": "/components/numBox/cmp",
+    "f-answerQuestionsSwiper": "/components/answerQuestionsSwiper/cmp"
+  }
+}
