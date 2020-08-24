@@ -48,6 +48,14 @@ Page({
         // 获取成绩列表
         getAllResult(subject, userId).then(res => {
             const data = res.data.data;
+            if (!data || !Array.isArray(data)) {
+                wx.showToast({
+                    title: '发生了一些未知的错误，无法获取最高分数',
+                    icon: 'none',
+                    duration: 2000
+                })
+                return;
+            }
             const highestNum = this.getHighestNum(data);
             // 设置navbar背景色
             this.setNavBg(highestNum);

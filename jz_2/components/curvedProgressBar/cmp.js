@@ -10,7 +10,7 @@ Component({
         }
     },
     observers: {
-        'percentage': function(percentage){
+        'percentage': function (percentage) {
             this.drawProgress(percentage);
             // this.drawCanvas(percentage);
         }
@@ -19,7 +19,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-        
+
     },
 
 
@@ -49,9 +49,19 @@ Component({
             const query = wx.createSelectorQuery().in(this);
 
             query.select('#curvedProgressBarCanvas')
-                .fields({ node: true, size: true })
+                .fields({
+                    node: true,
+                    size: true
+                })
                 .exec((res) => {
-                    if(!res[0].node) return;
+                    if (!res || typeof res[0] !== 'object' || !res[0].node) {
+                        wx.showToast({
+                            title: '发生了一些未知的错误，无法正常显示分数',
+                            icon: 'none',
+                            duration: 2000
+                        })
+                        return;
+                    };
                     const canvas = res[0].node;
                     const ctx = canvas.getContext('2d');
                     // 设置线段样式为圆角
@@ -106,7 +116,7 @@ Component({
             //     ctx.stroke();
             //     ctx.draw();
             // }, 1000/60);
-            
+
         },
     },
     lifetimes: {

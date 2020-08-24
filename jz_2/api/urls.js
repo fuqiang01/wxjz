@@ -1,5 +1,5 @@
 export default {
-    baseUrl: "https://wxjz.fqiang.co",
+    baseUrl: "https://wxjz.fqla.cn",
     // baseUrl: "http://localhost:19525",
     onLogin: "/user/onLogin", // 登录
     updateNameAndPhoto: "/user/updateNameAndPhoto", // 更新用户的名字和头像地址
