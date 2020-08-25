@@ -54,7 +54,7 @@ Component({
                     size: true
                 })
                 .exec((res) => {
-                    if (!res || typeof res[0] !== 'object' || !res[0].node) {
+                    if (!res || typeof res[0] !== 'object' || res[0] == null || !res[0].node) {
                         wx.showToast({
                             title: '发生了一些未知的错误，无法正常显示分数',
                             icon: 'none',
@@ -64,6 +64,14 @@ Component({
                     };
                     const canvas = res[0].node;
                     const ctx = canvas.getContext('2d');
+                    if (!ctx) {
+                        wx.showToast({
+                            title: '发生了一些未知的错误，无法正常显示分数',
+                            icon: 'none',
+                            duration: 2000
+                        })
+                        return;
+                    }
                     // 设置线段样式为圆角
                     ctx.lineCap = "round";
                     // 先获取最终绘制完成对应的角度值
